@@ -1,5 +1,17 @@
 # Como Tornar o Repositório Público e Habilitar GitHub Pages
 
+## ⚠️ IMPORTANTE: Configuração de Environment Protection
+
+Se você estiver fazendo deploy de uma branch que não seja `main`, você precisará configurar as permissões de ambiente:
+
+1. Vá para: `Settings` > `Environments` > `github-pages`
+2. Em "Deployment branches and tags", adicione sua branch
+3. Salve as configurações
+
+**OU** faça o merge do seu PR para a branch `main` que já tem permissão.
+
+---
+
 ## 🔓 Tornando o Repositório Público
 
 1. **Acesse as Configurações do Repositório**
