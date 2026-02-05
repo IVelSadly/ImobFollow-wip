@@ -36,6 +36,7 @@ export default function HomePage() {
   const [email, setEmail] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const publicUrl = process.env.PUBLIC_URL || "";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -113,8 +114,8 @@ export default function HomePage() {
                 className="font-['Plus_Jakarta_Sans'] font-bold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-slate-950 leading-[1.1]"
                 data-testid="hero-headline">
 
-                Transforme Leads Imobiliários em{" "}
-                <span className="text-emerald-600">Vendas com IA</span>
+                Infraestrutura de IA para o{" "}
+                <span className="text-emerald-600">Mercado Imobiliário</span>
               </motion.h1>
 
               {/* Subheadline */}
@@ -123,23 +124,23 @@ export default function HomePage() {
                 className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-xl"
                 data-testid="hero-subheadline">
 
-                Centralize seus contatos. Deixe nossa IA classificar, responder e fazer o follow-up automático{" "}
-                <span className="font-semibold text-slate-700">(1, 3 e 7 dias)</span> para você nunca mais perder uma venda.
+                Somos um hub de infraestrutura que orquestra dados, modelos e integrações para operações imobiliárias com{" "}
+                <span className="font-semibold text-slate-700">Escalabilidade, Segurança e Conformidade LGPD</span>.
               </motion.p>
 
               {/* Features */}
               <motion.div variants={staggerItem} className="flex flex-wrap gap-4 text-sm text-slate-600">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                  <span>Classificação Automática</span>
+                  <span>Orquestração de Dados</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                  <span>Follow-up Inteligente</span>
+                  <span>Segurança &amp; LGPD</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                  <span>Inbox Unificado</span>
+                  <span>APIs Empresariais</span>
                 </div>
               </motion.div>
 
@@ -186,7 +187,7 @@ export default function HomePage() {
                         </span> :
 
                     <span className="flex items-center gap-2">
-                          Entrar na Lista
+                          Entrar na Lista de Espera
                           <ArrowRight className="w-4 h-4" />
                         </span>
                     }
@@ -216,20 +217,20 @@ export default function HomePage() {
 
           </p>
           <div className="flex items-center gap-6 text-sm">
-            <Link
-              to="/termos"
+            <a
+              href={`${publicUrl}/terms.html`}
               className="text-slate-500 hover:text-slate-900 transition-colors duration-200"
               data-testid="terms-link">
 
               Termos de Uso
-            </Link>
-            <Link
-              to="/privacidade"
+            </a>
+            <a
+              href={`${publicUrl}/privacy.html`}
               className="text-slate-500 hover:text-slate-900 transition-colors duration-200"
               data-testid="privacy-link">
 
               Política de Privacidade
-            </Link>
+            </a>
           </div>
         </div>
       </footer>

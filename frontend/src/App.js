@@ -8,7 +8,7 @@ import PrivacidadePage from "@/pages/PrivacidadePage";
 function App() {
   return (
     <div className="min-h-screen bg-slate-50">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/termos" element={<TermosPage />} />
