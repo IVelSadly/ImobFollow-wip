@@ -8,7 +8,7 @@ import PrivacidadePage from "@/pages/PrivacidadePage";
 function App() {
   return (
     <div className="min-h-screen bg-slate-50">
-      <BrowserRouter>
+      <BrowserRouter basename="/ImobFollow-wip">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/termos" element={<TermosPage />} />
