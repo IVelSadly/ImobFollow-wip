@@ -4,6 +4,33 @@
 
 Seu repositório **ImobFollow-wip** foi completamente auditado e está seguro para ser tornado público.
 
+## ⚠️ AÇÃO NECESSÁRIA PARA DEPLOY
+
+**O workflow do GitHub Pages está configurado mas precisa de aprovação manual de ambiente.**
+
+### 🚀 Como Colocar o Site no Ar - 3 Opções:
+
+#### **OPÇÃO 1: Merge para Main (RECOMENDADO) ⭐**
+1. Faça o merge deste Pull Request para a branch `main`
+2. O GitHub Actions executará automaticamente
+3. Site estará no ar em minutos
+
+#### **OPÇÃO 2: Configurar Permissões de Ambiente**
+1. Vá para: https://github.com/IVelSadly/ImobFollow-wip/settings/environments
+2. Clique em "github-pages"
+3. Adicione a branch `copilot/secure-repository-public` às branches permitidas
+4. Re-execute o workflow em Actions
+
+#### **OPÇÃO 3: Executar Manualmente**
+1. Vá para: https://github.com/IVelSadly/ImobFollow-wip/actions/workflows/deploy-pages.yml
+2. Clique em "Run workflow"
+3. Selecione a branch e execute
+
+### 🌐 URL do Site
+Após o deploy: **https://ivelsadly.github.io/ImobFollow-wip/**
+
+📖 **Veja DEPLOY-ACTION-REQUIRED.md para instruções detalhadas!**
+
 ---
 
 ## 📊 Resumo da Auditoria de Segurança
